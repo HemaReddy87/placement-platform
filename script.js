@@ -1,16 +1,32 @@
-document.getElementById("submit-quiz").addEventListener("click", function () {
+let timeLeft = 60;
+let timer = document.getElementById("time");
 
-    let score = 0;
-    let totalQuestions = 5;   // change this number if you add more questions
+let countdown = setInterval(() => {
+  timeLeft--;
+  timer.textContent = timeLeft;
 
-    for (let i = 1; i <= totalQuestions; i++) {
-        let answer = document.querySelector(`input[name="q${i}"]:checked`);
+  if (timeLeft <= 0) {
+    clearInterval(countdown);
+    submitQuiz();
+  }
+}, 1000);
 
-        if (answer && answer.value === "correct") {
-            score++;
-        }
-    }
-
-    document.getElementById("result").innerText =
-        "Your Score: " + score + " / " + totalQuestions;
+document.getElementById("quiz-form").addEventListener("submit", function (e) {
+  e.preventDefault();
+  submitQuiz();
 });
+
+function submitQuiz() {
+  clearInterval(countdown);
+
+  let score = 0;
+
+  let q1 = document.querySelector('input[name="q1"]:checked');
+  let q2 = document.querySelector('input[name="q2"]:checked');
+
+  if (q1 && q1.value === "30") score++;
+  if (q2 && q2.value === "JavaScript") score++;
+
+  document.getElementById("result").innerText =
+    "Your Score: " + score + "/2";
+}
