@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Placement Preparation Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container header-inner">
+        <h1>Placement Preparation Platform</h1>
+        <p class="tag">Prepare smart. Crack placements.</p>
+    </div>
+</header>
+
+<nav class="container">
+    <a href="#home" class="nav-link">Home</a>
+    <a href="#aptitude" class="nav-link">Aptitude</a>
+    <a href="#coding" class="nav-link">Coding</a>
+    <a href="#mocktest" class="nav-link">Mock Tests</a>
+    <a href="#interview" class="nav-link">Interview Tips</a>
+    <input id="search" placeholder="Search topics, questions..." />
+</nav>
+
+<main class="container">
+    <section id="home" class="card">
+        <h2>Welcome</h2>
+        <p>Get curated aptitude questions, coding practice, timed mock-tests and interview tips — all in one place.</p>
+        <div class="quick-links">
+            <a class="cta" href="#aptitude">Start Aptitude</a>
+            <a class="cta" href="#coding">Start Coding</a>
+        </div>
+    </section>
+
+    <section id="aptitude" class="card">
+        <h2>Aptitude</h2>
+        <p>Practice quantitative, logical reasoning, and verbal ability.</p>
+        <ul>
+            <li>Number Systems & Percentages</li>
+            <li>Time & Work, Time Speed Distance</li>
+            <li>Logical Puzzles & Seating Arrangement</li>
+            <li>Verbal Ability: Reading Comprehension & Grammar</li>
+        </ul>
+        <button id="start-aptitude">Start Aptitude Quiz</button>
+        <div id="quiz" style="display:none;">
+    <h3>Aptitude Quiz</h3>
+
+    <p>1. What is 10% of 200?</p>
+    <input type="radio" name="q1" value="10"> 10<br>
+    <input type="radio" name="q1" value="20"> 20<br>
+    <input type="radio" name="q1" value="30"> 30<br>
+
+    <p>2. If A = 1, B = 2, what is C?</p>
+    <input type="radio" name="q2" value="2"> 2<br>
+    <input type="radio" name="q2" value="3"> 3<br>
+    <input type="radio" name="q2" value="4"> 4<br>
+
+    <br>
+    <button id="submit-quiz">Submit Quiz</button>
+    <p id="result"></p>
+</div>
+
+    </section>
+
+    <section id="coding" class="card">
+        <h2>Coding Practice</h2>
+        <p>Solve problems categorized by difficulty and company tags.</p>
+        <div class="grid">
+            <div class="tile">
+                <h3>Easy</h3>
+                <p>Array, String basics</p>
+                <a href="#" class="small-btn">Try problems</a>
+            </div>
+            <div class="tile">
+                <h3>Medium</h3>
+                <p>DP, Graphs, Two pointers</p>
+                <a href="#" class="small-btn">Try problems</a>
+            </div>
+            <div class="tile">
+                <h3>Hard</h3>
+                <p>Advanced DS & Algorithms</p>
+                <a href="#" class="small-btn">Try problems</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="mocktest" class="card">
+        <h2>Mock Tests</h2>
+        <p>Timed mocks for aptitude and coding with score reports.</p>
+        <button id="start-mock">Take a Mock Test</button>
+    </section>
+
+    <section id="interview" class="card">
+        <h2>Interview Tips</h2>
+        <p>Behavioral (HR) and technical interview guidance, common questions, and checklists.</p>
+        <ol>
+            <li>Resume grooming</li>
+            <li>STAR method for behavioral answers</li>
+            <li>System design basics (for experienced hires)</li>
+            <li>Mock interview scripts</li>
+        </ol>
+        <button id="view-tips">View Tips</button>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p>© 2026 Placement Prep Platform — Built with ❤️</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+<section id="mocktest" class="card">
+  <h2>Mock Test</h2>
+  <p>Click below to start mock test.</p>
+  <button class="cta">Start Mock Test</button>
+</section>
