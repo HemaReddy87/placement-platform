@@ -17,12 +17,12 @@ function submitTest() {
 
   let score = 0;
 
-  let q1 = document.querySelector('input[name="q1"]:checked');
-  let q2 = document.querySelector('input[name="q2"]:checked');
-
-  if (q1 && q1.value === "30") score++;
-  if (q2 && q2.value === "JavaScript") score++;
+  if (document.querySelector('input[name="q1"]:checked')?.value === "30") score++;
+  if (document.querySelector('input[name="q2"]:checked')?.value === "JavaScript") score++;
+  if (document.querySelector('input[name="q3"]:checked')?.value === "HyperText Markup Language") score++;
+  if (document.querySelector('input[name="q4"]:checked')?.value === "Styling") score++;
+  if (document.querySelector('input[name="q5"]:checked')?.value === "Programming Language") score++;
 
   document.getElementById("result").innerText =
-    "Your Score: " + score + " / 2";
+    "Your Score: " + score + " / 5";
 }
